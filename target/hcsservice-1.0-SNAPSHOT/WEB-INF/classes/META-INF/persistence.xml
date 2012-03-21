@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+    <!-- Hybrid Cloud Safe "unit" for MongoDB -->
+    <persistence-unit name="hcs_mongodb_manager">
+		<provider>com.impetus.kundera.KunderaPersistence</provider>
+		<properties>
+			<property name="kundera.nodes" value="CCS55"/>
+			<property name="kundera.port" value="27017"/>
+			<property name="kundera.keyspace" value="hcs"/>
+			<property name="kundera.dialect" value="mongodb"/>
+			<property name="kundera.client" value="MongoDB"/>
+			<property name="index_home_dir" value="/var/tmp/"/>
+		</properties>
+	</persistence-unit>	
+	
+</persistence>
