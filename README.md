@@ -1,6 +1,6 @@
 
-Mongo DB Service - By Raghav Prabhu
-===================================
+   Mongo DB Service 
+ ======================
  
    1. JPA Enabled DataObject using Kundera library - Object Persistence in NoSQL
    2. Persistence unit configuration - configure MongoDB / Cassandra Datastores
