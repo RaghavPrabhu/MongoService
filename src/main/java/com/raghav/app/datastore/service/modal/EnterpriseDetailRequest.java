@@ -23,7 +23,6 @@ public class EnterpriseDetailRequest implements Serializable {
 	private String companyName;
 	private String companyId;
 	private String emailId;
-	private String enableCCS;
 	private String password;
 	private Integer status;
 	private String userName;
@@ -100,18 +99,7 @@ public class EnterpriseDetailRequest implements Serializable {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	/**
-	 * @return the enableCCS
-	 */
-	public String getEnableCCS() {
-		return enableCCS;
-	}
-	/**
-	 * @param enableCCS the enableCCS to set
-	 */
-	public void setEnableCCS(String enableCCS) {
-		this.enableCCS = enableCCS;
-	}
+	
 	/**
 	 * @return the password
 	 */

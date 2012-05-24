@@ -33,7 +33,6 @@ public class EnterpriseDetailService  {
 		enterpriseDetailsDO.setCompanyId(enterpriseDetailRequest.getCompanyId());
 		enterpriseDetailsDO.setCompanyName(enterpriseDetailRequest.getCompanyName());
 		enterpriseDetailsDO.setEmailId(enterpriseDetailRequest.getEmailId());
-		enterpriseDetailsDO.setEnableCCS(enterpriseDetailRequest.getEnableCCS());
 		enterpriseDetailsDO.setPassword(enterpriseDetailRequest.getPassword());
 		enterpriseDetailsDO.setStatus(enterpriseDetailRequest.getStatus());
 		enterpriseDetailsDao.save(enterpriseDetailsDO);		 	

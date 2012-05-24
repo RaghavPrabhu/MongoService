@@ -6,7 +6,7 @@ import org.apache.commons.logging.LogFactory;
 
 
 /**
- * This class is to be used to throw any new exceptions related to Hybrid Cloud Safe
+ * This class is to be used to throw any new exceptions related to
  * data store system configuration or to wrap with any generic java exceptions.
  * 
  * @author Raghav Prabhu

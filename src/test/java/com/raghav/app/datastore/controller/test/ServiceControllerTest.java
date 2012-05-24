@@ -31,7 +31,6 @@ public class ServiceControllerTest extends AbstractBaseTest {
 		enterpriseDetailsRequest.setCompanyId("RAGANMBR");
 		enterpriseDetailsRequest.setCompanyName("RAGHAV Enterprise");
 		enterpriseDetailsRequest.setEmailId("RaghavPrabhu06@gmail.com");
-		enterpriseDetailsRequest.setEnableCCS("ACTIVE");
 		enterpriseDetailsRequest.setPassword("password");
 		enterpriseDetailsRequest.setStatus(1);
 		serviceController.addEnterpriseDetails(enterpriseDetailsRequest);

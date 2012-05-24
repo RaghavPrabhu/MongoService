@@ -18,14 +18,14 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 
-import com.raghav.app.datastore.base.dataobject.BaseHCSDO;
+import com.raghav.app.datastore.base.dataobject.BaseDO;
 import com.raghav.app.datastore.base.exception.DataAccessException;
 
 /**
  * @author Raghav Prabhu
  * @version 1.0
  */
-public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
+public abstract class AbstractJPA<T extends BaseDO> implements Dao<T> {
 
 	protected EntityManagerFactory entityManagerFactory;
 	protected EntityManager entityManager;
@@ -64,7 +64,7 @@ public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.cloudenablers.hcs.base.dao.Dao#save(com.cloudenablers.hcs.base.dataobject.BaseHCSDO)
+	 * @see com.raghav.hcs.base.dao.Dao#save(com.raghav.hcs.base.dataobject.BaseHCSDO)
 	 */
 	public void save(T domainObject) {
 		try {
@@ -78,7 +78,7 @@ public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.cloudenablers.hcs.base.dao.Dao#update(com.cloudenablers.hcs.base.dataobject.BaseHCSDO)
+	 * @see com.raghav.hcs.base.dao.Dao#update(com.raghav.hcs.base.dataobject.BaseHCSDO)
 	 */
 	public void update(T domainObject,String id) {
 		try {
@@ -94,7 +94,7 @@ public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.cloudenablers.hcs.base.dao.Dao#save(java.util.Collection)
+	 * @see com.raghav.hcs.base.dao.Dao#save(java.util.Collection)
 	 */
 	public void save(Collection<T> domainObjects) {
 		// TODO Auto-generated method stub
@@ -102,7 +102,7 @@ public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.cloudenablers.hcs.base.dao.Dao#get(java.lang.Class, int)
+	 * @see com.raghav.hcs.base.dao.Dao#get(java.lang.Class, int)
 	 */
 	public T get(Class<T> domainClass, String id) {
 		try {
@@ -116,7 +116,7 @@ public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see com.cloudenablers.hcs.base.dao.Dao#getAll(java.lang.Class)
+	 * @see com.raghav.hcs.base.dao.Dao#getAll(java.lang.Class)
 	 */
 	@SuppressWarnings("unchecked")
 	public Collection<T> getAll(Class<T> domainClass) {
@@ -192,7 +192,7 @@ public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.cloudenablers.hcs.base.dao.Dao#delete(com.cloudenablers.hcs.base.dataobject.BaseHCSDO, java.lang.Integer)
+	 * @see com.raghav.hcs.base.dao.Dao#delete(com.raghav.hcs.base.dataobject.BaseHCSDO, java.lang.Integer)
 	 */
 	public void delete(Class<T> domainClass, String id) {
 		try {
@@ -209,7 +209,7 @@ public abstract class AbstractHCSJPA<T extends BaseHCSDO> implements Dao<T> {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.cloudenablers.hcs.base.dao.Dao#deleteAll(java.util.Collection)
+	 * @see com.raghav.hcs.base.dao.Dao#deleteAll(java.util.Collection)
 	 */
 	public void deleteAll(Collection<T> domainObjectList) {
 		// TODO Auto-generated method stub

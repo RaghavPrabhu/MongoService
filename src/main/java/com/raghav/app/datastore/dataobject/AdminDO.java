@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.raghav.app.datastore.base.dataobject.BaseHCSDO;
+import com.raghav.app.datastore.base.dataobject.BaseDO;
 
 
 /**
@@ -19,8 +19,8 @@ import com.raghav.app.datastore.base.dataobject.BaseHCSDO;
  * 
  */
 @Entity
-@Table(name = "admins",schema="hcs@hcs_mongodb_manager")
-public class AdminDO extends BaseHCSDO {
+@Table(name = "admin",schema="mydb@my_mongodb_manager")
+public class AdminDO extends BaseDO {
 
 	/**
 	 * 

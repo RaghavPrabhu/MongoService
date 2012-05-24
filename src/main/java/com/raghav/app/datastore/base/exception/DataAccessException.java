@@ -9,7 +9,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * This class is to be used to throw any new exceptions related to data 
- * access in Hybrid Cloud Safe DataModal.
+ * access.
  * 
  * @author Raghav Prabhu
  * @version 1.0

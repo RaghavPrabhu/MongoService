@@ -27,7 +27,7 @@ public class AdminTest extends AbstractBaseTest {
 	@Test
 	public void saveAdmin(){
 		 AdminDO adminDO=new AdminDO();
-		adminDO.setId("RaghavTest2322s");
+		 adminDO.setId("RaghavTest2322s");
 		 adminDO.setUserName("RaghavPrabhu");
 		 adminDO.setPassword("password");
 		 adminDO.setEmailId("Raghav@gmail.com");
@@ -40,7 +40,7 @@ public class AdminTest extends AbstractBaseTest {
 	
 	
 	
-	//@Test
+	@Test
 	public void getAll(){
 		Collection<AdminDO> adminDOs=adminDao.getAll(AdminDO.class);
        for(AdminDO adminDO:adminDOs){
@@ -48,7 +48,7 @@ public class AdminTest extends AbstractBaseTest {
        }
 		}
 		
-	//@Test
+	@Test
 	public void updateAdmin(){
 		AdminDO adminDO=new AdminDO();
 		adminDO.setEmailId("Raghav@gmail.com");
@@ -56,7 +56,7 @@ public class AdminTest extends AbstractBaseTest {
 		System.out.println(adminDOs.size());
 	}
 	
-	//@Test
+	@Test
 	public void adminDelete(){
 		adminDao.delete(AdminDO.class, "RaghavTest2322s");
 	}

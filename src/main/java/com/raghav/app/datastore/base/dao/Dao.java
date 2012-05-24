@@ -3,7 +3,7 @@ package com.raghav.app.datastore.base.dao;
 import java.util.Collection;
 import java.util.List;
 
-import com.raghav.app.datastore.base.dataobject.BaseHCSDO;
+import com.raghav.app.datastore.base.dataobject.BaseDO;
 
 
 
@@ -13,7 +13,7 @@ import com.raghav.app.datastore.base.dataobject.BaseHCSDO;
  * @version 1.0
  * @param <T>
  */
-public interface Dao<T extends BaseHCSDO> {
+public interface Dao<T extends BaseDO> {
 
 	/**
 	 * This method is used to save domain object to the database. Persisted

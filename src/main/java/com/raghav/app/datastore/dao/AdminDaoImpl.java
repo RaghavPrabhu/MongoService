@@ -5,7 +5,7 @@ package com.raghav.app.datastore.dao;
 
 import org.springframework.stereotype.Repository;
 
-import com.raghav.app.datastore.base.dao.AbstractHCSJPA;
+import com.raghav.app.datastore.base.dao.AbstractJPA;
 import com.raghav.app.datastore.dataobject.AdminDO;
 
 /**
@@ -14,6 +14,6 @@ import com.raghav.app.datastore.dataobject.AdminDO;
  *
  */
  @Repository
-public class AdminDaoImpl extends AbstractHCSJPA<AdminDO> implements
+public class AdminDaoImpl extends AbstractJPA<AdminDO> implements
 		AdminDao {
 }

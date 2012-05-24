@@ -8,25 +8,21 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.raghav.app.datastore.base.dataobject.BaseHCSDO;
+import com.raghav.app.datastore.base.dataobject.BaseDO;
 
 /**
- * @author Saranya
+ * @author Raghav Prabhu
  *  @version 1.0
  *
  */
 @Entity
-@Table(name = "enterprisedetails",schema="hcs@hcs_mongodb_manager")
-public class EnterpriseDetailsDO extends BaseHCSDO {
+@Table(name = "enterprisedetails",schema="mydb@my_mongodb_manager")
+public class EnterpriseDetailsDO extends BaseDO {
 /**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	/*"_id" : { "$oid" : "4f1fb1269d8c6cb6e0dfe82e"} , "cmpShort_id" : "fhuuyhr5" ,
-"cmpShort_name" : "Sample" , "company_id" : "dnoplmfgl6tum6q" , 
-"company_name" : "Sample" , "email_id" : "nithyagrace@cusdelight.com" ,
-"enable_ccs" : "Enabled" , "password" : "kcjfb2h2gcgg1d2i0ikk1gebibbidk3k" ,
-"status" : 1 , "username" : "user1"}*/
+	
 	@Id
 	@Column(name="_id")
 	private String id;
@@ -45,10 +41,7 @@ public class EnterpriseDetailsDO extends BaseHCSDO {
 	
 	@Column(name="email_id")
 	private String emailId;
-	
-	@Column(name="enable_ccs")
-	private String enableCCS;
-	
+		
 	@Column(name="password")
 	private String password;
 	
@@ -128,18 +121,6 @@ public class EnterpriseDetailsDO extends BaseHCSDO {
 	 */
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
-	}
-	/**
-	 * @return the enableCCS
-	 */
-	public String getEnableCCS() {
-		return enableCCS;
-	}
-	/**
-	 * @param enableCCS the enableCCS to set
-	 */
-	public void setEnableCCS(String enableCCS) {
-		this.enableCCS = enableCCS;
 	}
 	/**
 	 * @return the password

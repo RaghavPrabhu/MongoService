@@ -7,10 +7,10 @@ import com.raghav.app.datastore.base.dao.Dao;
 import com.raghav.app.datastore.dataobject.EnterpriseDetailsDO;
 
 /**
- * @author Saranya
+ * @author Raghav Prabhu
  *  @version 1.0
  *
  */
-public interface EnterpriseDetailsDao extends Dao<EnterpriseDetailsDO>{
+public interface EnterpriseDetailsDao extends Dao<EnterpriseDetailsDO> {
 
 }

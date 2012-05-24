@@ -30,7 +30,6 @@ public class EnterpriseDetailServiceTest extends AbstractBaseTest {
 		enterpriseDetailsDO.setCompanyId("RAGANMBR");
 		enterpriseDetailsDO.setCompanyName("RAGHAV Enterprise");
 		enterpriseDetailsDO.setEmailId("RaghavPrabhu06@gmail.com");
-		enterpriseDetailsDO.setEnableCCS("ACTIVE");
 		enterpriseDetailsDO.setPassword("password");
 		enterpriseDetailsDO.setStatus(1);
 		enterpriseDetailService.addEnterpriseDetail(enterpriseDetailsDO);
