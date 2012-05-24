@@ -58,13 +58,13 @@ public abstract class AbstractJPA<T extends BaseDO> implements Dao<T> {
 	 */
 	@PersistenceContext
 	public void setEntityManager(EntityManager entityManager) {
-		this.entityManagerFactory=Persistence.createEntityManagerFactory("hcs_mongodb_manager");
+		this.entityManagerFactory=Persistence.createEntityManagerFactory("my_mongodb_manager");
 		this.entityManager = entityManagerFactory.createEntityManager();
 
 	}
 
 	/* (non-Javadoc)
-	 * @see com.raghav.hcs.base.dao.Dao#save(com.raghav.hcs.base.dataobject.BaseHCSDO)
+	 * @see com.raghav.hcs.base.dao.Dao#save(com.raghav.hcs.base.dataobject.BaseDO)
 	 */
 	public void save(T domainObject) {
 		try {
@@ -78,7 +78,7 @@ public abstract class AbstractJPA<T extends BaseDO> implements Dao<T> {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.raghav.hcs.base.dao.Dao#update(com.raghav.hcs.base.dataobject.BaseHCSDO)
+	 * @see com.raghav.hcs.base.dao.Dao#update(com.raghav.hcs.base.dataobject.BaseDO)
 	 */
 	public void update(T domainObject,String id) {
 		try {
